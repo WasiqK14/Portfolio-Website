@@ -3,7 +3,6 @@ import { Flex, Text, chakra, List, Image } from "@chakra-ui/react";
 import { navLinks } from "../../../constants/navbar.data";
 import { Icon } from "@iconify/react";
 import TagText from "../../tagtext/TagText";
-import logo from "../../../assets/images/WK.png";
 
 const ChakraIcon = chakra(Icon);
 
