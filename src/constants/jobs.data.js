@@ -1,4 +1,4 @@
-import ISSMLogo from "../assets/images/issm.jpeg";
+import ISSMLogo from "../assets/images/ISSM.jpeg";
 
 export const jobs = [
   {
