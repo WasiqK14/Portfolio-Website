@@ -5,6 +5,8 @@ import REACTLogo from "../assets/images/REACT.png";
 import NODELogo from "../assets/images/NODE.png";
 import FIREBASELogo from "../assets/images/FIREBASE.webp";
 import MONGOLogo from "../assets/images/MONGO.svg";
+import TSLogo from "../assets/images/TS.svg";
+
 export const stack = [
   {
     key: 1,
@@ -44,4 +46,9 @@ export const stack2 = [
     name: "Node.js",
     imgSrc: NODELogo,
   },
+  {
+    key: 4,
+    name: "TypeScript",
+    imgSrc: TSLogo,
+  }
 ];

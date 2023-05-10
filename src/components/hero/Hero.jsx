@@ -11,16 +11,14 @@ const Hero = () => {
       justifyContent="center"
       alignItems="center"
       paddingLeft="80px"
-      paddingTop="80px"
+      paddingTop="20px"
+      marginTop="100px"
+      paddingBottom="20px"
     >
       <Flex>
         <TagText>
           {`<h1>`}
-          <Flex
-            alignItems="center"
-            justifyContent="center"
-
-          >
+          <Flex alignItems="center" justifyContent="center">
             <Text
               color="#48B0A0"
               fontSize="3xl"
@@ -29,7 +27,11 @@ const Hero = () => {
             >
               1.Intro
             </Text>
-            <Flex borderBottom="0.5px solid #48B0A0" width="500px" ml="25px"></Flex>
+            <Flex
+              borderBottom="0.5px solid #48B0A0"
+              width="500px"
+              ml="25px"
+            ></Flex>
           </Flex>
 
           {`</h1>`}

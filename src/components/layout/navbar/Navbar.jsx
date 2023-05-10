@@ -3,10 +3,13 @@ import { Flex, Text, chakra, List, Image } from "@chakra-ui/react";
 import { navLinks } from "../../../constants/navbar.data";
 import { Icon } from "@iconify/react";
 import TagText from "../../tagtext/TagText";
+import { useNavigate } from "react-router-dom";
 
 const ChakraIcon = chakra(Icon);
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
   return (
     <Flex
       justify="space-between"
@@ -38,6 +41,7 @@ const Navbar = () => {
               transform: "scale(1.3)",
               transition: "all 0.2s ease-in-out",
             }}
+            onClick={() => navigate(link.path)}
           >
             <ChakraIcon
               key={link.id}
