@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Enabling smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional styling for your sections if needed */
+section {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Styling for navigation links */
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #fff; /* Change as needed */
+}
+
+/* Active link styling - optional */
+nav a.active {
+  color: #48b0a0; /* Change as needed */
+}
+
+/* Additional global styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}

@@ -4,11 +4,11 @@ import { navLinks } from "../../../constants/navbar.data";
 import { Icon } from "@iconify/react";
 import TagText from "../../tagtext/TagText";
 import { useNavigate } from "react-router-dom";
+import WK from "../../../assets/images/WK.svg";
 
 const ChakraIcon = chakra(Icon);
 
 const Navbar = () => {
-
   const navigate = useNavigate();
   return (
     <Flex
@@ -23,15 +23,24 @@ const Navbar = () => {
       bgGradient="linear(to-r, #0A192F, #1b1c1e)"
       bg="linear(to-r, #0A192F, #1b1c1e)"
     >
-      <TagText>
-        {`<image>`}
-
-        {`</image>`}
-      </TagText>
+      <Image
+        src={WK}
+        alt="WK"
+        borderRadius="full"
+        boxSize="40px"
+        mr="10px"
+        _hover={{
+          transform: "scale(1.3)",
+          transition: "all 0.2s ease-in-out",
+        }}
+      />
       <List display="flex" alignItems="center">
         <TagText>{`<ul>`}</TagText>
         {navLinks.map((link) => (
-          <Flex
+          <a
+            href={link.path}
+            key={link.id}
+            className="flex"
             cursor="pointer"
             borderRadius="10px"
             mr="5px"
@@ -62,7 +71,7 @@ const Navbar = () => {
             >
               {link.title}
             </Text>
-          </Flex>
+          </a>
         ))}
         <TagText>{`</ul>`}</TagText>
       </List>

@@ -2,19 +2,19 @@ export const navLinks = [
   {
     key: 1,
     title: "Intro",
-    path: "/intro",
+    path: "#hero",
     icon: "mdi:human-hello-variant",
   },
   {
     key: 2,
     title: "Stack",
-    path: "/stack",
+    path: "#techstack",
     icon: "mdi:code-tags",
   },
   {
     key: 3,
     title: "Experience",
-    path: "/experience",
+    path: "#experience",
     icon: "mdi:briefcase",
   },
   {
