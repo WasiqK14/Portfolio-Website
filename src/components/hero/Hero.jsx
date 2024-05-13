@@ -1,9 +1,6 @@
 import React from "react";
-import { Flex, Text, chakra, Box, Link } from "@chakra-ui/react";
-import { Icon } from "@iconify/react";
+import { Flex, Text, Box, Link } from "@chakra-ui/react";
 import TagText from "../tagtext/TagText";
-
-const ChakraIcon = chakra(Icon);
 
 const Hero = () => {
   return (

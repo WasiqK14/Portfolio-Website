@@ -1,5 +1,5 @@
 import { Flex, Link } from "@chakra-ui/react";
-import { Navbar, Hero, TechStack, Experience } from "../../components";
+import { Navbar, Hero, TechStack, Experience, Contact } from "../../components";
 import "./index.css";
 const Main = () => {
   return (
@@ -7,9 +7,10 @@ const Main = () => {
       direction="column"
       //set a 0A192F background color as gradient
       bgGradient="linear(to-r, #0A192F, #1b1c1e)"
-      minH="100vh"
-      minW="100vw"
+      // backgroundImage="repeating-radial-gradient(  #0c0a0a 80%,#2f312f 90%,#3f4549 90%)"
+      // backgroundSize="15px 15px" 
       h="screen"
+    
       animation="fadeIn 1s ease-in-out"
     >
       <Flex
@@ -50,6 +51,10 @@ const Main = () => {
 
       <div id="experience">
         <Experience />
+      </div>
+
+      <div id="contact">
+        <Contact />
       </div>
     </Flex>
   );

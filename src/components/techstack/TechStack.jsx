@@ -14,13 +14,9 @@ const TechStack = () => {
       paddingBottom="20px"
     >
       <Flex>
-      <TagText>
+        <TagText>
           {`<h1>`}
-          <Flex
-            alignItems="center"
-            justifyContent="center"
-
-          >
+          <Flex alignItems="center" justifyContent="center">
             <Text
               color="#48B0A0"
               fontSize="3xl"
@@ -29,17 +25,21 @@ const TechStack = () => {
             >
               2.Tech Stack
             </Text>
-            <Flex borderBottom="0.5px solid #48B0A0" width="500px" ml="25px"></Flex>
+            <Flex
+              borderBottom="0.5px solid #48B0A0"
+              width="500px"
+              ml="25px"
+            ></Flex>
           </Flex>
 
           {`</h1>`}
         </TagText>
       </Flex>
-      <Flex paddingLeft="60px" paddingTop="20px" paddingRight="60px">
-        {stack.map((item) => {
+      <Flex paddingLeft="60px" paddingTop="20px" gap="2" flexWrap="wrap">
+        {stack.map((item, index) => {
           return (
             <Box
-              key={item.id}
+              key={index}
               cursor="pointer"
               width="200px"
               height="200px"
@@ -103,7 +103,7 @@ const TechStack = () => {
           );
         })}
       </Flex>
-      <Flex paddingLeft="60px" paddingTop="20px" paddingRight="60px">
+      {/* <Flex paddingLeft="60px" paddingTop="20px" paddingRight="60px">
         {stack2.map((item) => {
           return (
             <Box
@@ -169,7 +169,7 @@ const TechStack = () => {
             </Box>
           );
         })}
-      </Flex>
+      </Flex> */}
     </Box>
   );
 };

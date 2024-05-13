@@ -26,7 +26,7 @@ export const navLinks = [
   {
     key: 5,
     title: "Contact",
-    path: "/contact",
+    path: "#contact",
     icon: "mdi:email",
   },
 ];
